@@ -53,7 +53,7 @@ public class AddingMachine {
         clear function clears total value and transaction history.
         */
 	public void clear() {
-	    total= 0;
+	    total = 0;
             transaction = "";// clears total value and history of transactions.
 	}
 }
