@@ -7,26 +7,30 @@ package cse360assign2;
 public class AddingMachine {
 
 	private int total;
+        private String transaction;
 	
         /*
         This is constructor of class AddingMachine
         */
 	public AddingMachine () {
-		total = 0;  // not needed - included for clarity
+		total = 0;  // initialise total to 0
+                transaction = String.valueOf(total); // initialise string with "0"
 	}
 	
         /*
         getTotal Function provides total value after operations.
         */
 	public int getTotal () {
-		return 0; // returns total value after operatons are performed.
+		return total; // returns total value after operatons are performed.
 	}
         
 	/*
         add function performs addtion.
         */
 	public void add (int value) {
-		                     // adds value to the total value
+            
+	 total = total + value;	                     // adds value to the total value
+         transaction = transaction + " + " + value;
 	}
         
 	/*
@@ -34,20 +38,22 @@ public class AddingMachine {
         */
         
 	public void subtract (int value) {
-		// subtracts value from the total value.
-	}
+		total = total - value;// subtracts value from the total value.
+                transaction = transaction + " - " + value;
+        }
         
 	/*
         toString function keeps track of transction. 
         */	
 	public String toString () {
-		return ""; // returns history of the transactions in the form of string.
+		return transaction; // returns history of the transactions in the form of string.
 	}
 
         /*
         clear function clears total value and transaction history.
         */
 	public void clear() {
-	    // clears total value and history of transactions.
+	    total=0;
+            transaction ="";// clears total value and history of transactions.
 	}
 }
