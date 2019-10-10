@@ -103,7 +103,7 @@ public class AddingMachineTest {
     @Test
     public void testClear() {
         System.out.println("clear");
-        String expected = "";      // Expected Output
+        String expected = "0";      // Expected Output
         AddingMachine instance = new AddingMachine();
         instance.clear();   // calling clear method.
        String transaction = instance.toString();   // stores output of to string function to match with expected out put.

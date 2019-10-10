@@ -54,6 +54,6 @@ public class AddingMachine {
         */
 	public void clear() {
 	    total = 0;
-            transaction = "";// clears total value and history of transactions.
+            transaction = "0";// clears total value and history of transactions.
 	}
 }
